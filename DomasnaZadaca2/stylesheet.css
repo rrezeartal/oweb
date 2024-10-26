@@ -1,0 +1,100 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    text-align: center;
+    background-image: url("background.jpg");
+}
+
+form {
+    background-image: url("background.jpg");
+    color: #eff0ea;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+strong {
+    font-variant: small-caps;
+    color: #eff0ea
+}
+
+h1 {
+    font-weight: bolder;
+    color: #a5331d;
+    background-color: hsl(70, 17%, 93%, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+textarea,
+input,
+select {
+    font-size: medium;
+    font-variant: small-caps;
+    background-color: #eff0ea;
+    border-radius: 5px;
+}
+
+.box {
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #597525;
+    max-width: 350px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-width: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    opacity: 90%;
+}
+
+.box2 {
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #97301b;
+    max-width: 350px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border-width: 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    opacity: 90%;
+}
+
+.box2 input[type="text"],
+.box2 input[type="tel"],
+.box2 textarea {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #eff0ea;
+    color: #000000;
+    border-width: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: medium;
+}
+
+input[type="submit"]:hover {
+    background-color: hsla(118, 52%, 37%, 0.8);
+}
+
+input[type="reset"]:hover {
+    background-color: hsl(0, 53%, 53%, 0.8);
+}
+
+header .logo {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    width: 150px;
+    height: auto;
+    z-index: 1;
+    opacity: 90%;
+}

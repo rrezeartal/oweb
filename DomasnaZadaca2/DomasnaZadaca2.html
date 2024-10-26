@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <title>Papas Pizzeria</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="logo.jpg" alt="Logo" class="logo" />
+      <h1>Make your order!</h1>
+    </header>
+    <div class="background"></div>
+
+    <form method="post" action="https://www.kliknijadi.mk/">
+      <input type="hidden" name="redirect" value="https://www.kliknijadi.mk/" />
+
+      <div class="box">
+        <label><strong>Select the pizza size:</strong></label
+        ><br />
+        <label
+          >Jumbo <input name="pizza_size" type="radio" value="Jumbo" /></label
+        ><br />
+        <label
+          >Large <input name="pizza_size" type="radio" value="Large" /></label
+        ><br />
+        <label
+          >Medium
+          <input name="pizza_size" type="radio" value="Medium" checked /></label
+        ><br />
+        <label
+          >Small <input name="pizza_size" type="radio" value="Small" /></label
+        ><br />
+        <label>Mini <input name="pizza_size" type="radio" value="Mini" /></label
+        ><br />
+      </div>
+
+      <div class="box2">
+        <label><strong>Select the crust type:</strong></label
+        ><br />
+        <select name="crust_type">
+          <option>Thin</option>
+          <option>Medium</option>
+          <option>Thick</option>
+          <option selected>Neapolitan</option>
+          <option>New York Style</option>
+          <option>Deep Dish</option>
+          <option>Sicilian</option>
+          <option>Stuffed</option>
+          <option>Gluten Free</option>
+        </select>
+      </div>
+
+      <div class="box">
+        <label><strong>Select the toppings:</strong></label
+        ><br />
+        <label
+          >Tomato Sauce
+          <input name="toppings" type="checkbox" value="Tomato Sauce" /></label
+        ><br />
+        <label
+          >Alfredo Sauce
+          <input name="toppings" type="checkbox" value="Alfredo Sauce" /></label
+        ><br />
+        <label
+          >Cheese
+          <input name="toppings" type="checkbox" value="Cheese" /></label
+        ><br />
+        <label
+          >Pepperoni
+          <input name="toppings" type="checkbox" value="Pepperoni" /></label
+        ><br />
+        <label
+          >Bacon <input name="toppings" type="checkbox" value="Bacon" /></label
+        ><br />
+        <label
+          >Prosciutto
+          <input name="toppings" type="checkbox" value="Prosciutto" /></label
+        ><br />
+        <label>Ham <input name="toppings" type="checkbox" value="Ham" /></label
+        ><br />
+        <label
+          >Chicken
+          <input name="toppings" type="checkbox" value="Chicken" /></label
+        ><br />
+        <label
+          >Mushrooms
+          <input name="toppings" type="checkbox" value="Mushrooms" /></label
+        ><br />
+        <label
+          >Pepper
+          <input name="toppings" type="checkbox" value="Pepper" /></label
+        ><br />
+        <label
+          >Cherry Tomato
+          <input name="toppings" type="checkbox" value="Cherry Tomato" /></label
+        ><br />
+        <label
+          >Onion <input name="toppings" type="checkbox" value="Onion" /></label
+        ><br />
+        <label
+          >Olive <input name="toppings" type="checkbox" value="Olive" /></label
+        ><br />
+        <label
+          >Basil <input name="toppings" type="checkbox" value="Basil" /></label
+        ><br />
+        <label
+          >Spinach
+          <input name="toppings" type="checkbox" value="Spinach" /></label
+        ><br />
+      </div>
+
+      <div class="box2">
+        <label><strong>Name:</strong></label>
+        <input
+          name="name"
+          type="text"
+          maxlength="30"
+          placeholder="Enter your name"
+          required
+        /><br />
+
+        <label><strong>Phone:</strong></label>
+        <input
+          name="phone"
+          type="tel"
+          placeholder="+389 ## ### ###"
+          pattern="\+389\s\d{2}\s\d{3}\s\d{3}"
+          required
+        /><br />
+
+        <label><strong>Address:</strong></label>
+        <input
+          name="address"
+          type="text"
+          maxlength="50"
+          placeholder="Enter your address"
+          required
+        /><br />
+
+        <label><strong>Message:</strong></label>
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Leave a message!"
+        ></textarea>
+      </div>
+
+      <p>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </p>
+    </form>
+  </body>
+</html>
