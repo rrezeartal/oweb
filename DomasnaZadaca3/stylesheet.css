@@ -1,0 +1,29 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: palevioletred;
+}
+
+.game-container {
+    text-align: center;
+    background-color: pink;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px pink;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    margin-top: 10px;
+}
