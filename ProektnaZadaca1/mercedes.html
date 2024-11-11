@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes Models - RR Motors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="logo.png" alt="Logo" width="450" height="100">
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="questionnaire.html">Feedback</a></li>
+                <li><a href="#footer">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="filter-container p-3 bg-light rounded">
+                    <h4>Filter Options</h4>
+                    <div class="d-flex flex-wrap">
+                        <div class="mr-3">
+                            <label for="condition">Condition:</label>
+                            <select id="condition" class="form-control">
+                                <option value="all">All</option>
+                                <option value="new">New</option>
+                                <option value="used">Used</option>
+                            </select>
+                        </div>
+                        <div class="mr-3">
+                            <label for="price">Price Range:</label>
+                            <select id="price" class="form-control">
+                                <option value="all">All Prices</option>
+                                <option value="under500k">Under $500.000</option>
+                                <option value="over500k">Over $500.000</option>
+                            </select>
+                        </div>
+                        <div class="mr-3">
+                            <label for="year">Year:</label>
+                            <select id="year" class="form-control">
+                                <option value="all">All</option>
+                                <option value="classic">Classic (Pre-1990)</option>
+                                <option value="modern">Modern (1990+)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Models Grid -->
+        <div class="row" id="models-grid">
+            <!-- Model 1 -->
+            <div class="col-md-6 col-lg-4 mb-4" data-condition="used" data-price="1400000" data-year="1956">
+                <div class="card h-100">
+                    <img src="300sl.jpg" width="400" height="200" class="card-img-top" alt="300SL-Gullwing">
+                    <div class="card-body">
+                        <h5 class="card-title">300SL Gullwing</h5>
+                        <p class="card-text">Designed for those who dare.</p>
+                        <div class="specs">
+                            <p><strong>Price:</strong> $1.400.000</p>
+                            <p><strong>Year:</strong> 1956</p>
+                            <p><strong>Condition:</strong> Used</p>
+                        </div>
+                        <div class="buttons mt-3">
+                            <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule
+                                test drive</button>
+                        </div>
+                        <div class="buttons mt-3">
+                            <a href="https://www.mercedes-benz.com/en/innovation/milestones/the-gullwing-legend/"
+                                class="btn btn-custom">see more</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="social-interactions">
+                            <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+                            <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                                <i class="far fa-comment"></i> Comments
+                            </button>
+                        </div>
+                        <div id="comments1" class="collapse mt-2">
+                            <div class="comments-section">
+                                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                                <div class="comments-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Model 2 -->
+            <div class="col-md-6 col-lg-4 mb-4" data-condition="used" data-price="400000" data-year="2010">
+                <div class="card h-100">
+                    <img src="Mercedes-McLaren.jpg" width="400" height="200" class="card-img-top" alt="SLR_McLaren">
+                    <div class="card-body">
+                        <h5 class="card-title">SLR Mercedes - McLaren</h5>
+                        <p class="card-text">Precision-crafted for true enthusiasts.</p>
+                        <div class="specs">
+                            <p><strong>Price:</strong> $400.000</p>
+                            <p><strong>Year:</strong> 2010</p>
+                            <p><strong>Condition:</strong> Used</p>
+                        </div>
+                        <div class="buttons mt-3">
+                            <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule
+                                test drive</button>
+                        </div>
+                        <div class="buttons mt-3">
+                            <a href="https://en.wikipedia.org/wiki/Mercedes-Benz_SLR_McLaren" class="btn btn-custom">see
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="social-interactions">
+                            <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+                            <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                                <i class="far fa-comment"></i> Comments
+                            </button>
+                        </div>
+                        <div id="comments1" class="collapse mt-2">
+                            <div class="comments-section">
+                                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                                <div class="comments-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Model 3 -->
+            <div class="col-md-6 col-lg-4 mb-4" data-condition="new" data-price="170000" data-year="2012">
+                <div class="card h-100">
+                    <img src="mercedes-c63.jpg" width="400" height="200" class="card-img-top" alt="mercedes-c63">
+                    <div class="card-body">
+                        <h5 class="card-title">C63 Black Series</h5>
+                        <p class="card-text">Power and prestige in every detail.</p>
+                        <div class="specs">
+                            <p><strong>Price:</strong> $170.000</p>
+                            <p><strong>Year:</strong> 2012</p>
+                            <p><strong>Condition:</strong> New</p>
+                        </div>
+                        <div class="buttons mt-3">
+                            <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule
+                                test drive</button>
+                        </div>
+                        <div class="buttons mt-3">
+                            <a href="https://www.caranddriver.com/mercedes-amg/c63" class="btn btn-custom">see more</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="social-interactions">
+                            <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+                            <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                                <i class="far fa-comment"></i> Comments
+                            </button>
+                        </div>
+                        <div id="comments1" class="collapse mt-2">
+                            <div class="comments-section">
+                                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                                <div class="comments-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Model 4 -->
+            <div class="col-md-6 col-lg-4 mb-4" data-condition="new" data-price="190000" data-year="2020">
+                <div class="card h-100">
+                    <img src="amgs63.jpg" width="400" height="200" class="card-img-top" alt="amgs63">
+                    <div class="card-body">
+                        <h5 class="card-title">AMG S63 Convertible</h5>
+                        <p class="card-text">Luxury redefined for every journey.</p>
+                        <div class="specs">
+                            <p><strong>Price:</strong> $190.000</p>
+                            <p><strong>Year:</strong> 2020</p>
+                            <p><strong>Condition:</strong> New</p>
+                        </div>
+                        <div class="buttons mt-3">
+                            <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule
+                                test drive</button>
+                        </div>
+                        <div class="buttons mt-3">
+                            <a href="https://carbuzz.com/cars/mercedes-benz/amg-s63-convertible/"
+                                class="btn btn-custom">see more</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="social-interactions">
+                            <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+                            <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                                <i class="far fa-comment"></i> Comments
+                            </button>
+                        </div>
+                        <div id="comments1" class="collapse mt-2">
+                            <div class="comments-section">
+                                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                                <div class="comments-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Model 5 -->
+            <div class="col-md-6 col-lg-4 mb-4" data-condition="used" data-price="30000" data-year="1956">
+                <div class="card h-100">
+                    <img src="pontonw105.jpg" width="400" height="200" class="card-img-top" alt="Ponton-W105">
+                    <div class="card-body">
+                        <h5 class="card-title">Ponton W105</h5>
+                        <p class="card-text">Command the road with confidence.</p>
+                        <div class="specs">
+                            <p><strong>Price:</strong> $30.000</p>
+                            <p><strong>Year:</strong> 1956</p>
+                            <p><strong>Condition:</strong> Used</p>
+                        </div>
+                        <div class="buttons mt-3">
+                            <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule
+                                test drive</button>
+                        </div>
+                        <div class="buttons mt-3">
+                            <a href="https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/Ponton-Mercedes-six-cylinder-models-W-180-W-105-W-128-1954---1959.xhtml?oid=4882"
+                                class="btn btn-custom">see more</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="social-interactions">
+                            <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+                            <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                                <i class="far fa-comment"></i> Comments
+                            </button>
+                        </div>
+                        <div id="comments1" class="collapse mt-2">
+                            <div class="comments-section">
+                                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                                <div class="comments-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model 6 -->
+            <div class="col-md-6 col-lg-4 mb-4" data-condition="new" data-price="5450000" data-year="2022">
+                <div class="card h-100">
+                    <img src="Mercedes-AMG-One.jpg" width="400" height="200" class="card-img-top"
+                        alt="Mercedes-AMG ONE">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes-AMG ONE</h5>
+                        <p class="card-text">Explore beyond limits with style.</p>
+                        <div class="specs">
+                            <p><strong>Price:</strong> $5.450.000</p>
+                            <p><strong>Year:</strong> 2022</p>
+                            <p><strong>Condition:</strong> New</p>
+                        </div>
+                        <div class="buttons mt-3">
+                            <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule
+                                test drive</button>
+                        </div>
+                        <div class="buttons mt-3">
+                            <a href="https://www.mercedes-amg.com/en/home/vehicles/amg-one/hypercar.html"
+                                class="btn btn-custom">see more</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="social-interactions">
+                            <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+                            <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                                <i class="far fa-comment"></i> Comments
+                            </button>
+                        </div>
+                        <div id="comments1" class="collapse mt-2">
+                            <div class="comments-section">
+                                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                                <div class="comments-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Drive Modal -->
+    <div class="modal fade" id="testDriveModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Schedule a Test Drive</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="testDriveForm">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-date">Preferred Date:</label>
+                            <input type="date" class="form-control" id="preferred-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-time">Preferred Time:</label>
+                            <input type="time" class="form-control" id="preferred-time" required>
+                        </div>
+                        <button type="submit" class="btn btn-custom">submit request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><img src="fblogo.png" alt="Facebook" width="30" height="30" /></a>
+                    <a href="#" class="social-icon"><img src="iglogo.png" alt="Instagram" width="30" height="30" /></a>
+                    <a href="#" class="social-icon"><img src="ytlogo.png" alt="Youtube" width="30" height="30" /></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <h6>&copy; 2024 RR Motors Vehicle Dealership. All rights reserved.</h6>
+            </div>
+        </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <script src="model-filtering.js"></script>
+    </script>
+</body>
+
+</html>

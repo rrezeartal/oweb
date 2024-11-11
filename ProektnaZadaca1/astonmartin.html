@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aston Martin Models - RR Motors</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Logo" width="450" height="100">
+    <nav class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="questionnaire.html">Feedback</a></li>
+        <li><a href="#footer">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <div class="row mb-4">
+      <div class="col-md-12">
+        <div class="filter-container p-3 bg-light rounded">
+          <h4>Filter Options</h4>
+          <div class="d-flex flex-wrap">
+            <div class="mr-3">
+              <label for="condition">Condition:</label>
+              <select id="condition" class="form-control">
+                <option value="all">All</option>
+                <option value="new">New</option>
+                <option value="used">Used</option>
+              </select>
+            </div>
+            <div class="mr-3">
+              <label for="price">Price Range:</label>
+              <select id="price" class="form-control">
+                <option value="all">All Prices</option>
+                <option value="under500k">Under $500.000</option>
+                <option value="over500k">Over $500.000</option>
+              </select>
+            </div>
+            <div class="mr-3">
+              <label for="year">Year:</label>
+              <select id="year" class="form-control">
+                <option value="all">All</option>
+                <option value="classic">Classic (Pre-1990)</option>
+                <option value="modern">Modern (1990+)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Models Grid -->
+    <div class="row" id="models-grid">
+      <!-- Model 1 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-condition="used" data-price="1080000" data-year="1960">
+        <div class="card h-100">
+          <img src="db4.webp" width="400" height="200" class="card-img-top" alt="DB4">
+          <div class="card-body">
+            <h5 class="card-title">DB4</h5>
+            <p class="card-text">A classic beauty, the DB4 redefined British performance in the 1960s.</p>
+            <div class="specs">
+              <p><strong>Price:</strong> $1.080.000</p>
+              <p><strong>Year:</strong> 1960</p>
+              <p><strong>Condition:</strong> Used</p>
+            </div>
+            <div class="buttons mt-3">
+              <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule test
+                drive</button>
+            </div>
+            <div class="buttons mt-3">
+              <a href="https://www.astonmartin.com/en/models/past-models/db4-db4-convertible" class="btn btn-custom">see
+                more</a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="social-interactions">
+              <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+              <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                <i class="far fa-comment"></i> Comments
+              </button>
+            </div>
+            <div id="comments1" class="collapse mt-2">
+              <div class="comments-section">
+                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                <div class="comments-list">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model 2 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-condition="used" data-price="850000" data-year="1964">
+        <div class="card h-100">
+          <img src="db5.webp" width="400" height="200" class="card-img-top" alt="DB5">
+          <div class="card-body">
+            <h5 class="card-title">DB5</h5>
+            <p class="card-text">Timeless elegance and sophistication, famously known as James Bond’s car.</p>
+            <div class="specs">
+              <p><strong>Price:</strong> $850.000</p>
+              <p><strong>Year:</strong> 1964</p>
+              <p><strong>Condition:</strong> Used</p>
+            </div>
+            <div class="buttons mt-3">
+              <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule test
+                drive</button>
+            </div>
+            <div class="buttons mt-3">
+              <a href="https://www.astonmartin.com/en/models/past-models/db5-db5-convertible" class="btn btn-custom">see
+                more</a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="social-interactions">
+              <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+              <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                <i class="far fa-comment"></i> Comments
+              </button>
+            </div>
+            <div id="comments1" class="collapse mt-2">
+              <div class="comments-section">
+                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                <div class="comments-list">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model 3 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-condition="used" data-price="200000" data-year="1995">
+        <div class="card h-100">
+          <img src="vantage.webp" width="400" height="200" class="card-img-top" alt="Vantage">
+          <div class="card-body">
+            <h5 class="card-title">Vantage</h5>
+            <p class="card-text">A sleek, aggressive sports car blending power with luxury.</p>
+            <div class="specs">
+              <p><strong>Price:</strong> $200.000</p>
+              <p><strong>Year:</strong> 1995</p>
+              <p><strong>Condition:</strong> Used</p>
+            </div>
+            <div class="buttons mt-3">
+              <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule test
+                drive</button>
+            </div>
+            <div class="buttons mt-3">
+              <a href="https://www.astonmartin.com/en/models/past-models/vantage" class="btn btn-custom">see more</a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="social-interactions">
+              <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+              <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                <i class="far fa-comment"></i> Comments
+              </button>
+            </div>
+            <div id="comments1" class="collapse mt-2">
+              <div class="comments-section">
+                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                <div class="comments-list">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model 4 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-condition="new" data-price="205000" data-year="2003">
+        <div class="card h-100">
+          <img src="db9.webp" width="400" height="200" class="card-img-top" alt="DB9">
+          <div class="card-body">
+            <h5 class="card-title">DB9</h5>
+            <p class="card-text">A stunning combination of performance and refinement, setting new standards for grand
+              touring.</p>
+            <div class="specs">
+              <p><strong>Price:</strong> $205.000</p>
+              <p><strong>Year:</strong> 2003</p>
+              <p><strong>Condition:</strong> New</p>
+            </div>
+            <div class="buttons mt-3">
+              <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule test
+                drive</button>
+            </div>
+            <div class="buttons mt-3">
+              <a href="https://www.astonmartin.com/en/models/past-models/db9" class="btn btn-custom">see more</a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="social-interactions">
+              <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+              <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                <i class="far fa-comment"></i> Comments
+              </button>
+            </div>
+            <div id="comments1" class="collapse mt-2">
+              <div class="comments-section">
+                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                <div class="comments-list">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Model 5 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-condition="used" data-price="1800000" data-year="2012">
+        <div class="card h-100">
+          <img src="one77.webp" width="400" height="200" class="card-img-top" alt="One-77">
+          <div class="card-body">
+            <h5 class="card-title">One - 77</h5>
+            <p class="card-text">A limited-edition masterpiece, offering unrivaled performance and cutting-edge design.
+            </p>
+            <div class="specs">
+              <p><strong>Price:</strong> $1.800.000</p>
+              <p><strong>Year:</strong> 2012</p>
+              <p><strong>Condition:</strong> Used</p>
+            </div>
+            <div class="buttons mt-3">
+              <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule test
+                drive</button>
+            </div>
+            <div class="buttons mt-3">
+              <a href="https://www.astonmartin.com/en/models/past-models/one-77" class="btn btn-custom">see more</a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="social-interactions">
+              <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+              <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                <i class="far fa-comment"></i> Comments
+              </button>
+            </div>
+            <div id="comments1" class="collapse mt-2">
+              <div class="comments-section">
+                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                <div class="comments-list">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 6 -->
+      <div class="col-md-6 col-lg-4 mb-4" data-condition="new" data-price="3700000" data-year="2023">
+        <div class="card h-100">
+          <img src="Valkyrie.png" width="400" height="200" class="card-img-top" alt="Valkyrie">
+          <div class="card-body">
+            <h5 class="card-title">Valkyrie Coupe</h5>
+            <p class="card-text">Bold design meets unmatched agility.</p>
+            <div class="specs">
+              <p><strong>Price:</strong> $3.700.000</p>
+              <p><strong>Year:</strong> 2023</p>
+              <p><strong>Condition:</strong> New</p>
+            </div>
+            <div class="buttons mt-3">
+              <button class="btn btn-custom" data-toggle="modal" data-target="#testDriveModal">schedule test
+                drive</button>
+            </div>
+            <div class="buttons mt-3">
+              <a href="https://www.astonmartin.com/en/models/valkyrie?body=Valkyrie+Coupe" class="btn btn-custom">see
+                more</a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="social-interactions">
+              <button class="like-btn"><i class="far fa-heart"></i> <span>0</span></button>
+              <button class="comment-btn" data-toggle="collapse" data-target="#comments1">
+                <i class="far fa-comment"></i> Comments
+              </button>
+            </div>
+            <div id="comments1" class="collapse mt-2">
+              <div class="comments-section">
+                <input type="text" class="form-control mb-2" placeholder="Add a comment...">
+                <div class="comments-list">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Test Drive Modal -->
+  <div class="modal fade" id="testDriveModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Schedule a Test Drive</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="testDriveForm">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="preferred-date">Preferred Date:</label>
+              <input type="date" class="form-control" id="preferred-date" required>
+            </div>
+            <div class="form-group">
+              <label for="preferred-time">Preferred Time:</label>
+              <input type="time" class="form-control" id="preferred-time" required>
+            </div>
+            <button type="submit" class="btn btn-custom">submit request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="#" class="social-icon"><img src="fblogo.png" alt="Facebook" width="30" height="30" /></a>
+          <a href="#" class="social-icon"><img src="iglogo.png" alt="Instagram" width="30" height="30" /></a>
+          <a href="#" class="social-icon"><img src="ytlogo.png" alt="Youtube" width="30" height="30" /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h6>&copy; 2024 RR Motors Vehicle Dealership. All rights reserved.</h6>
+      </div>
+    </footer>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+  <script src="model-filtering.js"></script>
+  </script>
+</body>
+
+</html>
