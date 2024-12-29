@@ -1,0 +1,14 @@
+<div class="grid">
+  <app-comp *ngFor="let drv of vozaci; index as i; 
+  first as prv; last as posleden; odd as nepar; even as paren"
+  (click)="onAppView()"
+  [vozac]="drv" 
+  [indks]="i+1"
+  [class.is-first]="prv"
+  [class.is-last]="posleden"
+  [class.is-even]="paren"
+  [class.is-odd]="nepar"
+  ></app-comp>
+
+  
+</div>

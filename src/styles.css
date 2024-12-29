@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+app-comp.is-odd {
+    background-color: rgb(240, 240, 240);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+app-comp.is-even {
+    background-color: rgb(220, 220, 220);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+app-comp {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+
+}
+
+app-comp.body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 0px;
+}
+
+button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-variant: small-caps;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 2px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: rgb(60, 60, 60);
+    border-color: rgb(60, 60, 60);
+}

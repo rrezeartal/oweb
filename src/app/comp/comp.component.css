@@ -1,0 +1,27 @@
+
+.undr {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.begin {
+    background-color: #ffe3ff;  
+    border: 2px solid #ca19ca;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(255, 227, 255);
+}
+
+.adv {
+    background-color: #ffebf3;  
+    border: 2px solid #ff69b4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #ffebf3;
+}
+
+.lunatic{
+    background-color: #fff9da;
+    border-color: gold;
+    box-shadow: 0 2px 4px #ffd90033;
+}

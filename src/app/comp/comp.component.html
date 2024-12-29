@@ -1,0 +1,50 @@
+<div
+  *ngIf="vozac?.name != undefined"
+  [ngClass]="klasi()"
+  aria-label="driver information card"
+>
+  <div>
+    <h2 aria-level="2" [ngClass]="klasi()">
+      {{ indks + ". " + vozac?.name }}
+    </h2>
+    <div aria-label="team">{{ vozac?.team }}</div>
+  </div>
+
+  <img
+    width="300"
+    *ngIf="vozac?.iconUrl; else noImg"
+    [src]="vozac?.iconUrl"
+    role="img"
+    [attr.aria-label]="'driver image for ' + vozac?.name"
+    loading="lazy"
+  />
+
+  <ng-template #noImg>
+    <div role="alert" aria-live="polite">NO IMAGE</div>
+  </ng-template>
+
+  <div [ngSwitch]="vozac?.category" aria-label="driver category">
+    <div *ngSwitchCase="'EXPERT'">Expert</div>
+    <div *ngSwitchCase="'LUNATIC'">Lunatic</div>
+    <div *ngSwitchCase="'ASD'">ASD</div>
+    <div *ngSwitchDefault>No comment</div>
+  </div>
+
+  <button
+    (click)="onDrvView()"
+    role="button"
+    [attr.aria-label]="'View picture of ' + vozac?.name"
+  >
+    View Picture!
+  </button>
+  <br />
+  <button
+    (click)="onTeamView()"
+    role="button"
+    [attr.aria-label]="'View team information of ' + vozac?.team"
+  >
+    Team Info
+  </button>
+
+  <div>&nbsp;</div>
+</div>
