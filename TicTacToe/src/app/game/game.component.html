@@ -1,0 +1,30 @@
+<div class="game-container">
+  <div class="board" role="grid" aria-label="gameboard">
+    <div
+      *ngFor="let cell of board; let i = index"
+      class="cell"
+      (click)="makeMove(i)"
+      role="gridcell"
+      aria-live="polite"
+      [attr.aria-label]="
+        'Cell ' + (i + 1) + (cell ? ' contains ' + cell : ' is empty')
+      "
+    >
+      {{ cell }}
+    </div>
+  </div>
+
+  <div *ngIf="!winner" class="status" aria-live="polite">
+    <p>next player: {{ currentPlayer }}</p>
+  </div>
+
+  <div *ngIf="winner" class="status" aria-live="assertive">
+    <p *ngIf="winner !== 'draw'">winner: {{ winner }}</p>
+    <p *ngIf="winner === 'draw'">it's a draw!</p>
+    <button (click)="resetGame()" aria-label="reset game">reset game</button>
+  </div>
+
+  <div *ngIf="winner" class="status" aria-live="polite">
+    <p id="message">made with ❤️ by a girl in stem</p>
+  </div>
+</div>

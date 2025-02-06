@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFDEC;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 7px;
+  margin-bottom: 20px;
+  background-color: #FFE2E2;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  font-family: 'Gluten', sans-serif;
+  color: #86A788;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #FFCFCF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  cursor: pointer;
+  background-color: #FFE2E2;
+  border-radius: 5px;
+}
+
+.cell:hover {
+  background-color: #FFCFCF;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+}
+
+.status {
+  text-align: center;
+}
+
+button {
+  font-family: "Gluten", sans-serif;
+  cursor: pointer;
+  background-color: #86A788;
+  color: #FFFDEC;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #6F8F6F;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#message {
+  font-size: medium;
+}
